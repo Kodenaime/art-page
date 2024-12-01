@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --white-new: #E8E3D1;
+  --white: #FFFFFF;
+  --main: #EBC747;
+  --main-new: #96874F;
+  --black: #1C170D;
+
+  --container-lg: 80%;
+  --container-md: 90%;
+
+  --transition: all 500ms ease;
+
+}
+
+
+/*-----------------------------------*\
+  GENERAL STYLES
+\*-----------------------------------*/
+
+body {
+  font-family: 'Montserrat';
+  color: var(--black);
+  line-height: 1.6;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  width: var(--container-lg);
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5 {
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+.btn {
+  color: var(--white-color);
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0.7rem 2rem;
+  background: var(--primary-color);
+  border-radius: 0.8rem;
+  border: 2px solid var(--primary-color);
+  transition: var(--transition);
+}
+
